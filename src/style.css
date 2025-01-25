@@ -1,0 +1,138 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* لون خلفية فاتح */
+    margin: 0;
+    padding: 0;
+    color: #343a40; /* لون نص داكن */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* رأس الصفحة */
+header {
+    background: #007bff; /* لون أزرق */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* نماذج الإدخال */
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+select {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ced4da; /* لون حدود فاتح */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background: #28a745; /* لون أخضر */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #218838; /* لون أخضر داكن */
+    transform: scale(1.05);
+}
+
+/* صندوق الدردشة */
+.chat-box {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-sent {
+    text-align: right;
+    background-color: #d4edda; /* لون أخضر فاتح */
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.message-received {
+    text-align: left;
+    background-color: #f8d7da; /* لون وردي فاتح */
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* تصميم الروابط */
+a {
+    color: #007bff; /* لون أزرق */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* تصميم الصور */
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+}
+
+/* تصميم الرسائل */
+h2 {
+    color: #007bff; /* لون أزرق */
+}
+
+/* تصميم الرسائل التحذيرية */
+p {
+    margin: 10px 0;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .chat-box {
+        height: 250px;
+    }
+} 
